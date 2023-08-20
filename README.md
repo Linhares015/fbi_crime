@@ -1,6 +1,6 @@
 # Análise de Tendências de Crimes com Dados do FBI
 
-Projeto: Desenvolvimento de um pipeline de análise de dados para explorar tendências de crimes nos EUA e suas correlações com fatores socioeconômicos.
+Projeto: Desenvolvimento de um pipeline e de análise de dados para explorar tendências de crimes nos EUA e suas correlações com fatores socioeconômicos.
 
 ## Etapas de Desenvolvimento
 
@@ -8,18 +8,14 @@ Projeto: Desenvolvimento de um pipeline de análise de dados para explorar tend�
     - Extração de dados do FBI Crime Data e outras fontes socioeconômicas.
     - Utilização da biblioteca `pandas` para importação e navegação inicial dos dados.
 
-2. **Transformação e Enriquecimento dos Dados**:
-    - Limpeza e tratamento dos dados com `pandas`.
-    - Enriquecimento dos dados através da combinação de múltiplas fontes.
-    - Criação de indicadores e métricas relevantes para análise.
-
-3. **Modelagem com dbt**:
+2. **Modelagem com dbt**:
     - Utilização do `dbt` para modelagem e transformação dos dados.
+    - Enriquecimento dos dados através da combinação de múltiplas fontes.
     - Criação de modelos, testes e documentação.
 
-4. **Carregamento no Google BigQuery**:
+3. **Carregamento no Google BigQuery**:
     - Utilização da biblioteca `google-cloud-bigquery` para carregar os dados transformados no BigQuery.
-    - Estruturação dos dados em tabelas e views para análise.
+    - Estruturação dos dados em tabelas.
 
 5. **Orquestração com Airflow**:
     - Configuração do Apache Airflow para orquestrar o pipeline de dados.
@@ -32,6 +28,7 @@ Projeto: Desenvolvimento de um pipeline de análise de dados para explorar tend�
 ## Passo a Passo
 
 Utilizando o `dbt` e Python, os dados são extraídos, transformados e enriquecidos. Posteriormente, são carregados no Google BigQuery para análises mais profundas e visualizações. O Apache Airflow é utilizado para orquestrar todo o processo, garantindo que o pipeline seja executado de forma eficiente e em intervalos regulares.
+O Power BI será utilizado para visualização dos dados.
 
 ## Sobre o Desenvolvedor
 
